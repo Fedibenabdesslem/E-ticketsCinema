@@ -1,0 +1,113 @@
+[
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "AddToCart",
+    "RelativePath": "api/carts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ETicketing.ApiModel.CartItemCreateApiModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "GetCartListByUser",
+    "RelativePath": "api/carts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "Remove",
+    "RelativePath": "api/carts/{cartItemId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "DecreaseQuantity",
+    "RelativePath": "api/carts/{cartItemId}/decreaseQuantity",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "AddQuantity",
+    "RelativePath": "api/carts/{cartItemId}/increaseQuantity",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CartApiController",
+    "Method": "Update",
+    "RelativePath": "api/carts/{cartItemId}/updateQuantity",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cartItemId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "ETicketing.ApiModel.CartItemUpdateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ETicketing.Controllers.ApiController.CheckoutApiController",
+    "Method": "Checkout",
+    "RelativePath": "api/checkouts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ETicketing.ApiModel.CheckoutApiModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
